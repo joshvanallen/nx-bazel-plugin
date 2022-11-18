@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nx affected:build",
-    "postinstall": "yarn bazelisk build //..."
+    "build": "nx affected:build"
   },
   "private": true,
   "dependencies": {
