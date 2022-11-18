@@ -14,12 +14,15 @@ ts_config(
 
 ts_project(
     name = "goodbye-world",
-    srcs = ["src/index.ts", "src/lib/goodbye-world.ts"],
+    srcs = [
+        "src/index.ts",
+        "src/lib/goodbye-world.ts",
+    ],
     declaration = True,
-    tsconfig = "//packages/goodbye-world:tsconfig",
     source_map = True,
+    tsconfig = "//packages/goodbye-world:tsconfig",
     deps = [
-      "//:node_modules/@types/node",
-      "//:node_modules/tslib",
+        "//:node_modules/@types/node",
+        "//:node_modules/tslib",
     ],
 )

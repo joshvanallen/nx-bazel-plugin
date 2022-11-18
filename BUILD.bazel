@@ -9,5 +9,3 @@ ts_config(
     src = "tsconfig.base.json",
     visibility = [":__subpackages__"],
 )
-
-
