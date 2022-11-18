@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bazel-plugin-test/goodbye-world": [
+        "packages/goodbye-world/src/index.ts"
+      ],
       "@bazel-plugin-test/hello-world": ["packages/hello-world/src/index.ts"]
     }
   },

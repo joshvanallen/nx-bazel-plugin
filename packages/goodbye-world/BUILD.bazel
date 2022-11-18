@@ -1,0 +1,25 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@aspect_rules_ts//ts:defs.bzl", "ts_project")
+load("@aspect_rules_ts//ts:defs.bzl", "ts_config")
+
+ts_config(
+    name = "tsconfig",
+    src = "tsconfig.lib.json",
+    deps = [
+        "tsconfig.json",
+        "//:tsconfigBase",
+    ],
+)
+
+ts_project(
+    name = "goodbye-world",
+    srcs = ["src/index.ts", "src/lib/goodbye-world.ts"],
+    declaration = True,
+    tsconfig = "//packages/goodbye-world:tsconfig",
+    source_map = True,
+    deps = [
+      "//:node_modules/@types/node",
+      "//:node_modules/tslib",
+    ],
+)
