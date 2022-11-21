@@ -1,4 +1,4 @@
-import { Person } from "./person";
+import { Person } from './person';
 
 enum Message {
   Hello,
@@ -6,8 +6,8 @@ enum Message {
 }
 
 export function printMessage(message: Message, person: Person): void {
-  switch(message){
-    case Message.Hello: 
+  switch (message) {
+    case Message.Hello:
       console.log(`Hello ${person.name}`);
       break;
     case Message.Bye:

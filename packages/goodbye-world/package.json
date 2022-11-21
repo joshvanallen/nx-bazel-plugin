@@ -1,0 +1,5 @@
+{
+  "name": "@bazel-plugin-test/goodbye-world",
+  "version": "0.0.1",
+  "type": "commonjs"
+}
